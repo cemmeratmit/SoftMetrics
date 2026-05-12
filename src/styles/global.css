@@ -1,0 +1,12 @@
+/* This file is used to import Tailwind CSS styles and apply global styles to the application. */
+/* add font url before tailwind to ensure it is loaded before any styles that may use the font */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

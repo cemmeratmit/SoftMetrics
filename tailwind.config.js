@@ -1,0 +1,62 @@
+module.exports = {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    fontSize: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+    },
+    extend: {
+      fontFamily: {
+        sans: ['Questrial', 'sans-serif'],
+      },
+      colors: {
+        primary: {
+          100: '#EFEFEE',
+          200: '#0000FF',
+          300: '#000000',
+          400: '#006EFF',
+          500: '#0000FF',
+          600: '#0000FF',
+          700: '#0000FF',
+          800: '#0000FF',
+          900: '#0000FF',
+        },
+        gray: {
+          100: '#f7fafc',
+          200: '#edf2f7',
+          300: '#e2e8f0',
+          400: '#cbd5e0',
+          500: '#a0aec0',
+          600: '#718096',
+          700: '#4a5568',
+          800: '#2d3748',
+          900: '#1a202c',
+        },
+
+        brown: {
+          100: '#5B474B',
+          200: '#edf2f7',
+          300: '#e2e8f0',
+          400: '#cbd5e0',
+          500: '#a0aec0',
+          600: '#718096',
+          700: '#4a5568',
+          800: '#2d3748',
+          900: '#1a202c',
+        },
+      },
+      lineHeight: {
+        hero: '4.5rem',
+      },
+    },
+  },
+  plugins: [],
+};
