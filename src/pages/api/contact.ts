@@ -21,7 +21,7 @@ export default async function handler(
   try {
     const data = await resend.emails.send({
       from: 'SoftMetrics Contact <team@softmetrics.net>', // You can customize this
-      to: ['cemmer@MIT.EDU', 'ilkyazs@MIT.EDU', 'anita899@MIT.EDU'],
+      to: ['cemmer@mit.edu', 'ilkyazs@mit.edu', 'anita899@mit.edu'],
       replyTo: email, // User's email in reply-to
       subject: `New Contact Form Submission from ${name}`,
       html: `

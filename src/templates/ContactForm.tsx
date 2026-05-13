@@ -32,7 +32,7 @@ const ContactForm = (props: IContactFormProps) => {
 
     try {
       // Send to your API route
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/api/contact/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
