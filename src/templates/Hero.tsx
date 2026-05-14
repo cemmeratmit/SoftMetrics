@@ -29,21 +29,37 @@ const Hero = () => {
       </NavbarTwoColumns>
 
       {/* Content */}
-      <Section yPadding="pt-20 pb-32">
+      <Section yPadding="pt-40 pb-32">
         <HeroOneButton
+          //          title={
+          //            <>
+          //              {'The Desktop Device for Textile Measurement\n'}
+          //              <span className="text-primary-500">SoftMetrics.</span>
+          //            </>
+          //          }
           title={
-            <>
-              {'The Desktop Device for Textile Measurement\n'}
-              <span className="text-primary-500">SoftMetrics.</span>
-            </>
+            <div className="mb-2">
+              <>
+                {'The Desktop Device for Textile Measurement\n'}
+                <img
+                  src="/assets/images/main-logo.png"
+                  alt="SoftMetrics Logo"
+                  width={1200}
+                  height={400}
+                  style={{ objectFit: 'contain' }}
+                />
+              </>
+            </div>
           }
           description="get credible results fast and all in one place."
           button={
-            <button onClick={() => setContactFormOpen(true)}>
-              {' '}
-              {/* change link from button to form */}
-              <Button xl>contact us</Button>
-            </button>
+            <div className="mb-20 mt-12">
+              <button onClick={() => setContactFormOpen(true)}>
+                {' '}
+                {/* change link from button to form */}
+                <Button xl>contact us</Button>
+              </button>
+            </div>
           }
         />
       </Section>

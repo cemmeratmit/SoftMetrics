@@ -3,14 +3,17 @@ import { Section } from '../layout/Section';
 
 const VerticalFeatures = () => (
   <Section
-    title="Our Mission"
-    description="Textile testing is done behind closed doors, they are expensive, large and inaccessible.
-This alienates small scale labs and independent researchers slowing down innovation.
-SoftMetrics is a desktop device that provides credible results fast and all in one place, making textile measurement accessible to everyone."
+    title="A TOOL FOR EVERYONE"
+    description="We are building a device for performing measurements without barriers.
+    It is small enough to fit your desk.
+    It is easy to use and provides instructions if you are new to mechanical testing.
+    It provides results in minutes to fit your busy schedule.
+    It is modular and can be adjusted for any soft goods innovation you might be working on.
+    And it is so affordable, that you can have one too."
   >
     <VerticalFeatureRow
-      title="Democratizing textile measurement"
-      description="Industry grade testing equipment is great! It is highly accurate and reliable. But is is also expensive, large and difficult to operate. We do not want to replace industry grade testing equipment, butwe want to democratize textile measurement by providing a desktop device that provides credible results fast and all in one place - without complicated setups. We want to make measuring of textiles and soft goods accessible to everyone."
+      title="DEMOCRATIZING TEXTILE RESEARCH"
+      description="Industry grade testing equipment is highly accurate and reliable. But is is also expensive, large and requires training to operate. We do not want to replace industry grade testing equipment, but we want to democratize textile measurement by providing trend based measurements and conclusive data fast and all in one place without complicated setups. We want to make measuring of textiles and soft goods accessible to everyone."
       image="/assets/images/test-lab.png"
       imageAlt="First feature alt text"
     />
