@@ -3,6 +3,7 @@ import { AppConfig } from '../utils/AppConfig';
 import { Banner } from './Banner';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
+import { ImageBlock } from './ImageBlock';
 import { StatusQuo } from './StatusQuo';
 import { TextBlock } from './TextBlock';
 
@@ -22,8 +23,15 @@ const Base = () => (
       alignment="left"
       backgroundColor="bg-gray-100"
     />
+    <ImageBlock
+      src="/assets/images/blueprint-drawing.png"
+      alt="Our solution is more flexible than industrial testing, but more accurate than low fidelity setups."
+      // caption="Our solution is more flexible than industrial testing, but more accurate than low fidelity setups."
+      maxWidth="full"
+      alignment="center"
+    />
     {/* <VerticalFeatures /> */}{' '}
-    {/* temporarly commented out, can be brought back */}
+    {/* temporarily commented out, can be brought back */}
     <StatusQuo />
     <Banner />
     <Footer />
