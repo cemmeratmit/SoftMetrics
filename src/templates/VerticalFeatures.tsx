@@ -4,7 +4,9 @@ import { Section } from '../layout/Section';
 const VerticalFeatures = () => (
   <Section
     title="A TOOL FOR EVERYONE"
-    description="We are building a device for performing measurements without barriers.
+    description="We are building a device for performing measurements without barriers.\n
+    Maximum Flexibility. Minimum Barriers.
+    Maximum Accuracy. Minimal Size.
     It is small enough to fit your desk.
     It is easy to use and provides instructions if you are new to mechanical testing.
     It provides results in minutes to fit your busy schedule.
@@ -14,8 +16,8 @@ const VerticalFeatures = () => (
     <VerticalFeatureRow
       title="DEMOCRATIZING TEXTILE RESEARCH"
       description="Industry grade testing equipment is highly accurate and reliable. But is is also expensive, large and requires training to operate. We do not want to replace industry grade testing equipment, but we want to democratize textile measurement by providing trend based measurements and conclusive data fast and all in one place without complicated setups. We want to make measuring of textiles and soft goods accessible to everyone."
-      image="/assets/images/test-lab.png"
-      imageAlt="First feature alt text"
+      image="/assets/images/blueprint-drawing.png"
+      imageAlt="drawing of low fidelity measurements and industrial testing equipment"
     />
     <VerticalFeatureRow
       title="Yes, we want this!"
