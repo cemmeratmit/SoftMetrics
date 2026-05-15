@@ -23,7 +23,7 @@ const Hero = () => {
           <button onClick={() => setContactFormOpen(true)}>
             {' '}
             {/* change link to form in navbar */}
-            contact us
+            Contact Us
           </button>
         </li>
       </NavbarTwoColumns>
@@ -51,13 +51,13 @@ const Hero = () => {
               </>
             </div>
           }
-          description="get credible results fast and all in one place."
+          description="Get Credible Results Fast and All in One Place."
           button={
             <div className="mb-20 mt-12">
               <button onClick={() => setContactFormOpen(true)}>
                 {' '}
                 {/* change link from button to form */}
-                <Button xl>contact us</Button>
+                <Button xl>Contact Us</Button>
               </button>
             </div>
           }

@@ -4,13 +4,26 @@ import { Banner } from './Banner';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
 import { StatusQuo } from './StatusQuo';
-import { VerticalFeatures } from './VerticalFeatures';
+import { TextBlock } from './TextBlock';
 
 const Base = () => (
   <div className="text-brown-100 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Hero />
-    <VerticalFeatures />
+    <TextBlock
+      title="A TOOL FOR EVERYONE"
+      titleSize="md"
+      paragraphs={[
+        'Maximum Flexibility. Minimum Barriers. \nMaximum Accuracy. Minimal Size.',
+        ' > It is small enough to fit your desk.\n > It is easy to use and provides instructions if you are new to mechanical testing. \n > It provides results in minutes to fit your busy schedule. \n > It is modular and can be adjusted for any soft goods innovation you might be working on.',
+        'And it is so affordable, that you can have one too.',
+      ]}
+      // description="Maximum Flexibility. Minimum Barriers. Maximum Accuracy. Minimal Size. It is small enough to fit your desk. It is easy to use and provides instructions if you are new to mechanical testing. It provides results in minutes to fit your busy schedule. It is modular and can be adjusted for any soft goods innovation you might be working on. And it is so affordable, that you can have one too."
+      alignment="left"
+      backgroundColor="bg-gray-100"
+    />
+    {/* <VerticalFeatures /> */}{' '}
+    {/* temporarly commented out, can be brought back */}
     <StatusQuo />
     <Banner />
     <Footer />
