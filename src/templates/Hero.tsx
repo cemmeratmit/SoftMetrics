@@ -1,17 +1,18 @@
 import Link from 'next/link';
-import { useState } from 'react'; // For contact form
 
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
-import { ContactForm } from './ContactForm'; // for contact form
 import { Logo } from './Logo';
 
-const Hero = () => {
-  const [contactFormOpen, setContactFormOpen] = useState(false); // for contact form
+type IHeroProps = {
+  onContactClick: () => void;
+};
 
+const Hero = (props: IHeroProps) => {
+  // ← Accept props
   return (
     <Background color="bg-primary-100">
       {/* Navbar */}
@@ -20,9 +21,9 @@ const Hero = () => {
           <Link href="https://github.com/cemmeratmit/SoftMetrics">GitHub</Link>
         </li>
         <li>
-          <button onClick={() => setContactFormOpen(true)}>
+          <button onClick={props.onContactClick}>
             {' '}
-            {/* change link to form in navbar */}
+            {/* ← Use props */}
             Contact Us
           </button>
         </li>
@@ -31,12 +32,6 @@ const Hero = () => {
       {/* Content */}
       <Section yPadding="pt-40 pb-32">
         <HeroOneButton
-          //          title={
-          //            <>
-          //              {'The Desktop Device for Textile Measurement\n'}
-          //              <span className="text-primary-500">SoftMetrics.</span>
-          //            </>
-          //          }
           title={
             <div className="mb-2">
               <>
@@ -54,21 +49,15 @@ const Hero = () => {
           description="Get Credible Results Fast and All in One Place."
           button={
             <div className="mb-20 mt-12">
-              <button onClick={() => setContactFormOpen(true)}>
+              <button onClick={props.onContactClick}>
                 {' '}
-                {/* change link from button to form */}
+                {/* ← Use props */}
                 <Button xl>Contact Us</Button>
               </button>
             </div>
           }
         />
       </Section>
-
-      {/* Contact Form Modal */}
-      <ContactForm
-        isOpen={contactFormOpen}
-        onClose={() => setContactFormOpen(false)}
-      />
     </Background>
   );
 };

@@ -1,21 +1,26 @@
-import Link from 'next/link';
-
 import { Button } from '../button/Button';
 import { CTABanner } from '../cta/CTABanner';
 import { Section } from '../layout/Section';
 
-const Banner = () => (
-  <Section>
-    <CTABanner
-      title="We are currently looking for collaborators and early testers. Interested?"
-      subtitle="Start your Free Trial."
-      button={
-        <Link href="https://creativedesignsguru.com/category/nextjs/">
-          <Button>Get Started</Button>
-        </Link>
-      }
-    />
-  </Section>
-);
+type IBannerProps = {
+  onContactClick: () => void;
+};
+
+const Banner = (props: IBannerProps) => {
+  return (
+    <Section>
+      <CTABanner
+        title="We are currently looking for collaborators and early testers."
+        subtitle="Interested? Talk to us!"
+        button={
+          <button onClick={props.onContactClick}>
+            {' '}
+            <Button>Contact</Button>
+          </button>
+        }
+      />
+    </Section>
+  );
+};
 
 export { Banner };

@@ -20,16 +20,16 @@ const StatusQuo = () => (
           </td>
           <td className="border-2 border-gray-300 p-3">
             <Image
-              src="/assets/images/timeline.png"
-              alt="status quo image"
+              src="/assets/images/first-proto.png"
+              alt="First prototype made from old 3D printer"
               width={260}
               height={224}
             />
           </td>
           <td className="border-2 border-gray-300 p-3">
             <Image
-              src="/assets/images/design.png"
-              alt="status quo image"
+              src="/assets/images/stacked-logo.png"
+              alt="Logo Design."
               width={260}
               height={224}
             />
@@ -38,24 +38,24 @@ const StatusQuo = () => (
         <tr className="h-56">
           <td className="border-2 border-gray-300 p-3">
             <Image
-              src="/assets/images/moodboard.png"
-              alt="status quo image"
+              src="/assets/images/detail-5.png"
+              alt="added handles"
               width={260}
               height={224}
             />
           </td>
           <td className="border-2 border-gray-300 p-3">
             <Image
-              src="/assets/images/samples.png"
-              alt="status quo image"
+              src="/assets/images/ruler.png"
+              alt="low fidelity testing damages credibility"
               width={260}
               height={224}
             />
           </td>
           <td className="border-2 border-gray-300 p-3">
             <Image
-              src="/assets/images/work.png"
-              alt="status quo image"
+              src="/assets/images/studio-clean.png"
+              alt="second prototype in our studio"
               width={260}
               height={224}
             />
