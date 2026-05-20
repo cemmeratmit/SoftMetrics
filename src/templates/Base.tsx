@@ -24,7 +24,7 @@ const Base = () => (
       backgroundColor="bg-gray-100"
     />
     <ImageBlock
-      src="/assets/images/blueprint-drawing.png"
+      src="/assets/images/blueprint-drawing-no-title.png"
       alt="Our solution is more flexible than industrial testing, but more accurate than low fidelity setups."
       // caption="Our solution is more flexible than industrial testing, but more accurate than low fidelity setups."
       maxWidth="full"
